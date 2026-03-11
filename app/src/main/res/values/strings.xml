@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Lab01</string>
+    <string name="lab01">Lab01</string>
+    <string name="lab02">Lab02</string>
+    <string name="board_3x2">3 x 2</string>
+    <string name="board_4x3">4 x 3</string>
+    <string name="board_4x4">4 x 4</string>
+    <string name="board_6x6">6 x 6</string>
 </resources>

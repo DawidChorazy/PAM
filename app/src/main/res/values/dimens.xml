@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="intro_radius">24dp</dimen>
+    <dimen name="inner_margin">16dp</dimen>
+    <dimen name="icon_padding">8dp</dimen>
 </resources>

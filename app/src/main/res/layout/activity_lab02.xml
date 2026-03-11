@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/favorites_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/inner_margin"
+    android:useDefaultMargins="true"
+    android:columnCount="3">
+
+    <!-- Row 1 -->
+    <Button
+        android:id="@+id/main_3_2_board"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:width="0dp"
+        android:onClick="onBoardSizeSelected"
+        android:tag="3 2"
+        android:text="@string/board_3x2"
+        android:textSize="34sp"
+        app:icon="@drawable/baseline_airline_seat_individual_suite_24"
+        app:iconGravity="textTop"
+        app:iconPadding="@dimen/icon_padding"
+        app:iconSize="48dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:minWidth="@dimen/inner_margin"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/main_4_3_board"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:width="0dp"
+        android:onClick="onBoardSizeSelected"
+        android:tag="4 3"
+        android:text="@string/board_4x3"
+        android:textSize="34sp"
+        app:icon="@drawable/baseline_airline_seat_individual_suite_24"
+        app:iconGravity="textTop"
+        app:iconPadding="@dimen/icon_padding"
+        app:iconSize="48dp" />
+
+    <!-- Row 2 -->
+    <Button
+        android:id="@+id/main_4_4_board"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:width="0dp"
+        android:onClick="onBoardSizeSelected"
+        android:tag="4 4"
+        android:text="@string/board_4x4"
+        android:textSize="34sp"
+        app:icon="@drawable/baseline_airline_seat_individual_suite_24"
+        app:iconGravity="textTop"
+        app:iconPadding="@dimen/icon_padding"
+        app:iconSize="48dp" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:minWidth="@dimen/inner_margin"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/main_6_6_board"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:width="0dp"
+        android:onClick="onBoardSizeSelected"
+        android:tag="6 6"
+        android:text="@string/board_6x6"
+        android:textSize="34sp"
+        app:icon="@drawable/baseline_airline_seat_individual_suite_24"
+        app:iconGravity="textTop"
+        app:iconPadding="@dimen/icon_padding"
+        app:iconSize="48dp" />
+
+</GridLayout>
