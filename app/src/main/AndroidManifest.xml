@@ -19,6 +19,9 @@
             android:name="pl.wsei.pam.lab02.Lab02Activity"
             android:exported="false" />
         <activity
+            android:name="pl.wsei.pam.lab03.Lab03Activity"
+            android:exported="false" />
+        <activity
             android:name="pl.wsei.pam.MainActivity"
             android:exported="true">
             <intent-filter>
