@@ -1,6 +1,7 @@
 package pl.wsei.pam.lab01
 
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.LinearLayout
@@ -18,6 +19,10 @@ class Lab01Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lab01)
+        
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "Laboratorium 01"
+
         mLayout = findViewById(R.id.main)
 
         mTitle = TextView(this)
@@ -147,6 +152,14 @@ class Lab01Activity : AppCompatActivity() {
                 mProgress.progress += 1
             }
         }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            finish()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     // Wykonaj dzielenie niecałkowite parametru a przez b
