@@ -37,7 +37,9 @@ class Lab03Activity : AppCompatActivity() {
         if (savedInstanceState != null) {
             val state = savedInstanceState.getIntArray("state")
             val icons = savedInstanceState.getIntArray("icons")?.toList()
+            val matches = savedInstanceState.getInt("matches", 0)
             mBoardModel = MemoryBoardView(mBoard, cols, rows, icons)
+            mBoardModel.setMatches(matches)
             if (state != null) {
                 mBoardModel.setState(state)
             }
@@ -67,7 +69,6 @@ class Lab03Activity : AppCompatActivity() {
                         val firstTile = e.tiles[0]
                         val secondTile = e.tiles[1]
                         
-                        // Małe opóźnienie przed animacją powrotu, żeby gracz widział co odkrył
                         mBoard.postDelayed({
                             animateWrongPair(firstTile.button) {
                                 firstTile.revealed = false
@@ -154,5 +155,6 @@ class Lab03Activity : AppCompatActivity() {
         super.onSaveInstanceState(outState)
         outState.putIntArray("state", mBoardModel.getState())
         outState.putIntArray("icons", mBoardModel.getIconsState().toIntArray())
+        outState.putInt("matches", mBoardModel.getMatches())
     }
 }
