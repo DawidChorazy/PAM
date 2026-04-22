@@ -1,42 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp"
-    tools:context="pl.wsei.pam.MainActivity">
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moje Laboratoria"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="32dp"/>
 
     <Button
         android:id="@+id/mainBtnRunLab01"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
         android:onClick="onClickMainBtnRunLab01"
-        android:text="Laboratorium 01" />
+        android:text="Uruchom Laboratorium 01"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/mainBtnRunLab02"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
         android:onClick="onClickMainBtnRunLab02"
-        android:text="Laboratorium 02" />
+        android:text="Uruchom Laboratorium 02"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/mainBtnRunLab03"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
         android:onClick="onClickMainBtnRunLab03"
-        android:text="Laboratorium 03" />
+        android:text="Uruchom Grę Memory (Lab 03)"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/mainBtnRunLab06"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:onClick="onClickMainBtnRunLab06"
-        android:text="Laboratorium 06" />
+        android:text="Uruchom Centrum Zadań (Lab 06)"
+        android:textAllCaps="false" />
 
 </LinearLayout>
